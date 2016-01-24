@@ -48,8 +48,10 @@ SalmonCookieShop.prototype.renderTotalSales = function() {
   this.storeList.appendChild(storeDailyTotal);
 };
 
-for (store in stores) {
-  stores[store].renderStoreName();
-  stores[store].renderHourlySales();
-  stores[store].renderTotalSales();
-}
+window.onload = function(){
+  for (store in stores) {
+    stores[store].renderStoreName();
+    stores[store].renderHourlySales();
+    stores[store].renderTotalSales();
+  }
+};
