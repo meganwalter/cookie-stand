@@ -24,6 +24,26 @@ var southCenter = new SalmonCookieShop(11, 38, 1.9, 'Southcenter');
 var bellSquare =  new SalmonCookieShop(20, 48, 3.3, 'Bellevue Square');
 var alki = new SalmonCookieShop(3, 24, 2.6, 'Alki');
 
+function createNewStore(event) {
+  var storeCreated = document.getElementById('newStoreForm');
+  var newStore = new SalmonCookieShop(storeCreated.minCust.value, storeCreated.maxCust.value, storeCreated.avgSale.value, storeCreated.storeName.value);
+  newStore.renderStoreName();
+  newStore.renderHourlySales();
+  newStore.renderTotalSales();
+  event.preventDefault();
+  clearForm();
+}
+
+function clearForm() {
+  var formItems = document.getElementById('newStoreForm');
+  for (item in formItems) {
+    formItems[item].value = '';
+  }
+}
+
+var buttonSubmit = document.getElementById('createButton');
+buttonSubmit.addEventListener('click', createNewStore, false);
+
 var stores = [pikePlace, seaTacAirport, southCenter, bellSquare, alki];
 var section = document.getElementById('storeSales');
 
