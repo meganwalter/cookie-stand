@@ -6,7 +6,7 @@ function SalmonCookieShop(minCust, maxCust, avgSale, storeName) {
   this.storeName = storeName;
   this.todaysTotal = 0;
   this.customersThisHour = function(minCust, maxCust) {
-    return Math.random() * (maxCust - minCust + 1) + minCust;
+    return (Math.random() * (maxCust - minCust + 1)) + minCust;
   };
 
   this.salesThisHour = function() {
@@ -26,10 +26,12 @@ var stores = [pikePlace, seaTacAirport, southCenter, bellSquare, alki];
 
 function createNewStore(event) {
   var storeCreated = document.getElementById('newStoreForm');
-  var newStore = new SalmonCookieShop(storeCreated.minCust.value, storeCreated.maxCust.value, storeCreated.avgSale.value, storeCreated.storeName.value);
-  // newStore.renderStoreName();
+  var minCust = parseInt(storeCreated.minCust.value);
+  var maxCust = parseInt(storeCreated.maxCust.value);
+  var avgSale = parseInt(storeCreated.avgSale.value);
+  var storeName = storeCreated.minCust.value;
+  var newStore = new SalmonCookieShop(minCust, maxCust, avgSale, storeName);
   newStore.renderStore();
-  // newStore.renderTotalSales();
   event.preventDefault();
   clearForm();
 }
