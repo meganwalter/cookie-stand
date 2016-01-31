@@ -1,0 +1,99 @@
+body{
+  font-family: 'Quicksand', sans-serif;
+  margin-left: .5em;
+  width: 95%;
+}
+
+h1{
+  font-weight: bolder;
+  font-size: 3em;
+  color: rgb(2, 39, 53);
+  margin-top: .4em;
+  margin-bottom: .4em;
+}
+
+#heading{
+  /*border: 2px solid black;*/
+  margin-bottom: .8em;
+}
+
+#logo{
+  width: 30%;
+  margin: .5em;
+}
+
+#menuBar{
+  list-style: none;
+  background-color: rgb(64, 151, 7);
+  color: white;
+  float: left;
+  width: 100%;
+}
+
+#menuBar a{
+  color: white;
+}
+.stores{
+  float: left;
+  display: inline;
+}
+
+.stores img{
+  width: 7em;
+  float: left;
+  margin: .2em;
+}
+
+.itemlist li{
+  list-style: none;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:link{
+    color: inherit;
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+figcaption{
+  clear: left;
+}
+
+#menuBar ul{
+  padding-left: 1.2em;
+}
+
+#menuBar li{
+  display: inline;
+  padding: .5em 1.2em .5em 1.2em;
+  font-weight: bold;
+}
+
+#contactUs li{
+  clear: left;
+}
+
+h2{
+  font-weight: bold;
+  font-size: 1.4em;
+  font-style: italic;
+  color: rgb(172, 50, 8);
+  margin-top: .8em;
+  margin-bottom: .8em;
+  border-bottom: 2px solid black;
+  float: left;
+  width: 100%;
+}
+
+p{
+  font-weight: normal;
+  font-size: 1em;
+  color: black;
+  margin-top: .4em;
+  margin-bottom: .4em;
+}
