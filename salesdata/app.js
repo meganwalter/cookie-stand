@@ -29,7 +29,7 @@ function createNewStore(event) {
   var minCust = parseInt(storeCreated.minCust.value);
   var maxCust = parseInt(storeCreated.maxCust.value);
   var avgSale = parseInt(storeCreated.avgSale.value);
-  var storeName = storeCreated.minCust.value;
+  var storeName = storeCreated.storeName.value;
   var newStore = new SalmonCookieShop(minCust, maxCust, avgSale, storeName);
   newStore.renderStore();
   event.preventDefault();
