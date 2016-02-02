@@ -6,4 +6,12 @@ Creating a site for Pat to sell his salmon cookies and track his sales at brick 
 - Objects
 - Methods
 - Nesting lists
-- `appendChild` 
+- `appendChild`
+- Style Sheets
+- DOM manipulation
+- Tables
+- Forms
+- Buttons
+- Animations
+- CSS basics
+- `Math.Random()`
