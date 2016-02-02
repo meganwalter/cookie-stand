@@ -35,6 +35,15 @@ p{
   margin-bottom: 5px;
 }
 
+td{
+  padding: 15px;
+  border-bottom: 2px solid rgb(64, 151, 7);
+}
+
+.createStore{
+  padding-top: 15px;
+}
+
 #paragraph {
   margin-top: 10px;
   margin-bottom: 10px;
