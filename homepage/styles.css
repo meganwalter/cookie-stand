@@ -33,6 +33,7 @@ h1{
 #menuBar a{
   color: white;
 }
+
 .stores{
   float: left;
   display: inline;
@@ -96,4 +97,11 @@ p{
   color: black;
   margin-top: .4em;
   margin-bottom: .4em;
+}
+
+.jello {
+  -webkit-animation-name: jello;
+  animation-name: jello;
+  -webkit-transform-origin: center;
+  transform-origin: center;
 }
